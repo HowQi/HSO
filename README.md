@@ -190,8 +190,11 @@ HSO Tool项目是用.Net Core开发的,开发时考虑了代码的兼容性,这�
 **使用数据**:HSO在程序中以`HowSimpleObject`的实例的形式出现,HSO数组的实例在程序中即是原生数组`HowSimpleObject[]`。对于HSO,您可以直接使用`MyHso["attrName"]`的方法得到HowSimpleObject的数据项(即HSI)。HSI允许你直接以简单数据、数组、字典的方式访问数据,即`theItem1.Value`,`theItem2["theKey"]`,`theItem3[5]`,如果这个HSI的类型和你访问的方式不匹配,将抛出错误。每个HSI本质上是HSI的某个子类的实例——`HowSimpleValueItem`、`HowSimpleArrayItem`、`HowSimpleDictionaryItem`中的一种,可以通过访问器`ItemType`确定这个对象的类型。
 
 
+## 许可证
 
+本软件在大部分情况下都是可以免费使用的,具体许可类方式似MIT许可证。
 
+本项目使用的许可证为在MIT许可证基础上,要求在用户将本软件用于商业用途时,如果本软件是商业用途的产品的主要内容,必须确保其客户知道本软件有免费获取的途径。
 
-
+该许可证为本人进行修改而成的,称作MIT+CCUR。
 
