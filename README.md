@@ -181,13 +181,13 @@ HSO Tool项目是用.Net Core开发的,开发时考虑了代码的兼容性,这�
 
 将项目代码安置在您的项目中,使用`HowSimpleObjectTool`命名空间下的类可以读取和生成HSO文件。
 
-**读取数据**:使用静态类`HowSimpleObjectBuilder`的方法可以读取数据,读取使要求使用者知道待读的数据是单独的HSO还是HSO数组,读取这两种文件需要使用不同的函数。默认提供读取文本、读取流对象StreamReader的文本的功能,如果您希望读其他模式的数据,可以实现IArticle接口,实现其中的各类读取方法,传入相应方法中即可读取之。
+**读取数据**:使用静态类`HowSimpleObjectBuilder`的方法可以读取数据,读取时要求使用者知道待读的数据是单独的HSO还是HSO数组,读取这两种文件需要使用不同的函数。默认提供读取文本、读取流对象StreamReader的文本的功能,如果您希望读其他模式的数据,可以实现`IArticle`接口,实现其中的各类读取方法,传入相应方法中即可读取之。
 
 **读取数据中的注释**:静态类`HowSimpleObjectBuilder`提供的函数的重载支持读取井号注释的内容。本解析器进行过处理,如果您选择不读取井号注释,将不会对其注释内容进行任何储存操作,因此同等情况下效率高于等于读取注释的函数。
 
-**写入数据**:使用静态类`HowSimpleSerilizer`提供的函数可以写入HSO数据,默认提供写入到StringBuilder、StreamWriter的方法,如果您希望想其他地方写入数据,可以实现IPape接口,实现其中各类写入方法,传入相应方法中即可进行写入。目前不支持写入任何注释。目前写入数据时不会判断键和字典键的合法性,如果您向键中写入空格,那么数据将无法被正确读取。
+**写入数据**:使用静态类`HowSimpleSerilizer`提供的函数可以写入HSO数据,默认提供写入到`StringBuilder`、`StreamWriter`的方法,如果您希望想其他地方写入数据,可以实现`IPaper`接口,实现其中各类写入方法,传入相应方法中即可进行写入。目前不支持写入任何注释。目前写入数据时不会判断键和字典键的合法性,如果您向键中写入空格,那么数据将无法被正确读取。
 
-**使用数据**:对象在程序中以`HowSimpleObject`的实例的形式出现,HSO数组的实例在程序中即是原生数组`HowSimpleObject[]`。对于HSO,您可以直接使用`MyObj["attrName"]`的方法得到HowSimpleObject的数据项(即HSI)。HSI允许你直接以简单数据、数组、字典的方式访问数据,即`theItem1.Value`,`theItem2["theKey"]`,`theItem3[5]`,如果这个HSI的类型和你访问的方式不匹配,将抛出错误。每个HSI本质上是HSI的某个子类的实例——`HowSimpleValueItem`、`HowSimpleArrayItem`、`HowSimpleDictionaryItem`中的一种,可以通过访问器`ItemType`确定这个对象的类型。
+**使用数据**:HSO在程序中以`HowSimpleObject`的实例的形式出现,HSO数组的实例在程序中即是原生数组`HowSimpleObject[]`。对于HSO,您可以直接使用`MyHso["attrName"]`的方法得到HowSimpleObject的数据项(即HSI)。HSI允许你直接以简单数据、数组、字典的方式访问数据,即`theItem1.Value`,`theItem2["theKey"]`,`theItem3[5]`,如果这个HSI的类型和你访问的方式不匹配,将抛出错误。每个HSI本质上是HSI的某个子类的实例——`HowSimpleValueItem`、`HowSimpleArrayItem`、`HowSimpleDictionaryItem`中的一种,可以通过访问器`ItemType`确定这个对象的类型。
 
 
 
