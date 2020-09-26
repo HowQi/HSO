@@ -1,4 +1,4 @@
-MIT License
+MIT License with Conditional Commercial Use Requirements
 
 Copyright (c) 2020 How
 
@@ -11,6 +11,10 @@ furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
+
+If you use this software for commercial purposes, and this software is the
+main content of your product, you must ensure that your customers know that 
+this software is available for free.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
