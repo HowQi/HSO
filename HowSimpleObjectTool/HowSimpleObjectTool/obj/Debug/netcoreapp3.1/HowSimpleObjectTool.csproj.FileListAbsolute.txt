@@ -1,0 +1,9 @@
+C:\WProject\VS2019WorkSpace\HowSimpleObjectTool\HowSimpleObjectTool\bin\Debug\netcoreapp3.1\HowSimpleObjectTool.deps.json
+C:\WProject\VS2019WorkSpace\HowSimpleObjectTool\HowSimpleObjectTool\bin\Debug\netcoreapp3.1\HowSimpleObjectTool.dll
+C:\WProject\VS2019WorkSpace\HowSimpleObjectTool\HowSimpleObjectTool\bin\Debug\netcoreapp3.1\HowSimpleObjectTool.pdb
+C:\WProject\VS2019WorkSpace\HowSimpleObjectTool\HowSimpleObjectTool\obj\Debug\netcoreapp3.1\HowSimpleObjectTool.csprojAssemblyReference.cache
+C:\WProject\VS2019WorkSpace\HowSimpleObjectTool\HowSimpleObjectTool\obj\Debug\netcoreapp3.1\HowSimpleObjectTool.AssemblyInfoInputs.cache
+C:\WProject\VS2019WorkSpace\HowSimpleObjectTool\HowSimpleObjectTool\obj\Debug\netcoreapp3.1\HowSimpleObjectTool.AssemblyInfo.cs
+C:\WProject\VS2019WorkSpace\HowSimpleObjectTool\HowSimpleObjectTool\obj\Debug\netcoreapp3.1\HowSimpleObjectTool.csproj.CoreCompileInputs.cache
+C:\WProject\VS2019WorkSpace\HowSimpleObjectTool\HowSimpleObjectTool\obj\Debug\netcoreapp3.1\HowSimpleObjectTool.dll
+C:\WProject\VS2019WorkSpace\HowSimpleObjectTool\HowSimpleObjectTool\obj\Debug\netcoreapp3.1\HowSimpleObjectTool.pdb
