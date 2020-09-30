@@ -6,7 +6,13 @@ How Simple Object, 简称HSO, 是本人(How Qimiu)自创的一种语法简单的
 
 HSO致力于阅读简单和使用简单这两个目标。
 
-本项目提供对其语法的介绍以及一个有一定便利性的语法分析工具(C#)。
+本项目提供:
+
++ **本markdown**:对其语法的介绍
+
++ **HowSimpleObjectTool**:一个有一定便利性的语法分析工具(C#)。
+
++ **Notepad++ UDL File**:适用于Notepad++的文件高亮设置(自定义语言格式文件,从Notepad++的语言->自定义语言格式可导入之)
 
 ## 语法
 
