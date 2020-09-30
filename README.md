@@ -8,11 +8,11 @@ HSO致力于阅读简单和使用简单这两个目标。
 
 本项目提供:
 
-+ **本markdown**:对其语法的介绍
++ **本 README**:对其语法的介绍
 
 + **HowSimpleObjectTool**:一个有一定便利性的语法分析工具(C#)。
 
-+ **Notepad++ UDL File**:适用于Notepad++的文件高亮设置(自定义语言格式文件,从Notepad++的语言->自定义语言格式可导入之)
++ **Notepad++ UDL Xml**:适用于Notepad++的文件高亮设置(自定义语言格式文件,从Notepad++的语言->自定义语言格式可导入之)
 
 ## 语法
 
