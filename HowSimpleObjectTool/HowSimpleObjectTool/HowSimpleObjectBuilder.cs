@@ -1,4 +1,4 @@
-﻿using Microsoft.Win32.SafeHandles;
+using Microsoft.Win32.SafeHandles;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -222,7 +222,9 @@ namespace HowSimpleObjectTool
             {
                 if (articleBuf.Count > 0)
                 {
-                    articleBuf.Dequeue();
+                    char? tch;
+                    tch = articleBuf.Dequeue();
+                    Console.Write(Convert.ToString(tch));
                 }
             }
 
@@ -513,7 +515,7 @@ namespace HowSimpleObjectTool
                     objs.Add(res);
                 }
                 hsoBuf = new Dictionary<string, HowSimpleItem>();
-                Console.WriteLine("[[out obj]]"+hsoBuf.ToString());
+                //Console.WriteLine("[[out obj]]" + hsoBuf.ToString());
                 return res;
             }
 
@@ -525,7 +527,7 @@ namespace HowSimpleObjectTool
             {
                 var res = objs;
                 objs = new List<HowSimpleObject>();
-                Console.WriteLine("[[out ary]]" + objs.ToString());
+                //Console.WriteLine("[[out ary]]" + objs.ToString());
                 return res;
             }
 
@@ -536,7 +538,7 @@ namespace HowSimpleObjectTool
             {
                 var res = new Element(Element.TPContent, eleBuf.ToString());
                 hsiBuf.Add(res);
-                Console.WriteLine("[Fin Content]"+res.ToString());
+                //Console.WriteLine("[Fin Content]" + res.ToString());
                 eleBuf.Clear();
             }
 
@@ -547,7 +549,7 @@ namespace HowSimpleObjectTool
             {
                 var res = new Element(Element.TPQuotationContent, eleBuf.ToString());
                 hsiBuf.Add(res);
-                Console.WriteLine("[Fin Quot Content]" + res.ToString());
+                //Console.WriteLine("[Fin Quot Content]" + res.ToString());
                 eleBuf.Clear();
             }
 
@@ -558,7 +560,7 @@ namespace HowSimpleObjectTool
             {
                 var res = new Element(Element.TPOperator, eleBuf.ToString());
                 hsiBuf.Add(res);
-                Console.WriteLine("[Fin Operator]" +res.ToString());
+                // Console.WriteLine("[Fin Operator]" + res.ToString());
                 eleBuf.Clear();
             }
 
@@ -611,7 +613,8 @@ namespace HowSimpleObjectTool
                 }
                 if (ch > 0x0000 && ch <= '/'
                     || ch >= ':' && ch <= '@'
-                    || ch >= '[' && ch <= '`'
+                    || ch >= '[' && ch <= '^'
+                    || ch == '`'
                     || ch >= '{' && ch <= 0x007F
                     )//为了不让数据格式带有充满歧义的字符,特独立划分出常用符号以排除
                 {
